@@ -1,0 +1,18 @@
+*{
+	margin: 30px auto;
+}
+table{
+	border:1px;
+	line-height: 50px;
+}
+h2{
+	text-align: center;
+}
+
+td,th{
+	width: 100px;
+	text-align: center;
+}
+#div1{
+	float: right;
+}

@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+body 
+{
+	background-color: #f5f5f5;
+}
+#main
+{
+	width: 900px;
+	height: 500px;
+	margin: 0 auto;
+	background: url(../../pic/06.jpg);
+}
+#login1
+{
+	width: 440px;
+	height: 300px;
+	border: 1px solid #d1d1cf;
+	background:#ddd;
+	box-shadow:10px 10px 5px #444;
+	position: relative;
+	top: 50px;
+	left: 220px;
+}
+#login2
+{
+	width:436px; 
+	height:295px;
+	background-color:#f3f3f3;
+}
+#loginTopDiv
+{
+	padding: 20px 150px;
+}
+#loginTop
+{
+	color: #696969; 
+	font-size: 20px; 
+	font-weight: 900;
+}	
+#form{
+	padding: 20px 60px;
+	color: #666666;
+	font-size: 18px;
+
+}
+.input1{
+	width: 200px;
+	height: 30px;
+}
+.but1{
+	width: 50px;
+	height: 30px;
+	margin-left: 70px;
+}

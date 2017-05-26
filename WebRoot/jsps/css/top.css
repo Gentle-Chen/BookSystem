@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+*{
+	margin: 0;
+}
+#top{
+	width: 100%;
+	height: 200px;
+	background: #ccc;
+	font-family: 幼圆;
+}
+a{
+	text-decoration: none;
+}

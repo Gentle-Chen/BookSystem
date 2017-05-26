@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.zhbit.book.Domain.Seller" table="book_seller">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="name" column="name" not-null="true"></property>
+		<property name="password" column="password" not-null="true"></property>
+		<property name="email" column="email" not-null="true"></property>
+		<property name="telphone" column="telphone" not-null="true"></property>
+		<property name="address" column="address" not-null="true"></property>
+		
+
+	</class>
+	
+</hibernate-mapping>
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default " namespace="/">
+		<global-results>
+			<result name="input">/jsps/user/login.jsp</result>
+		</global-results>
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="success">/index.jsp</result>
+			<result name="input">/loginpage.jsp</result>
+			<result name="userRegist">/loginpage.jsp</result>
+			<result name="sellerRegist">/loginpage.jsp</result>
+			<result name="userLogin">/index.jsp</result>
+			<result name="sellerLogin">/index.jsp</result>
+		</action>
+
+		<action name="book_*" class="bookAction" method="{1}">
+			<result name="toAddBookPage">/jsps/book/bookAdd.jsp</result>
+			<result name="addBook">/jsps/page/left_05.jsp</result>
+			<result name="bookListPage">/jsps/book/list.jsp</result>
+
+			<result name="BookItem">/jsps/cart/CarAdd.jsp</result>
+			<result name="CarAdd">/jsps/cart/CarList.jsp</result>
+			
+			<result name="CarDelete" type="redirectAction">book_CarList</result>
+			<result name="CarEdit">/jsps/cart/CarEditt.jsp</result>
+			<result name="CarUpdate" type="redirectAction">book_CarList</result>
+			<result name="CarList">/jsps/cart/CarList.jsp</result>
+	
+		</action>
+		
+		<action name="order_*" class="orderAction" method="{1}">			
+			<result name="orderAdd">/index.jsp</result>
+			<result name="myOrderList">/jsps/order/list.jsp</result>
+			<result name="item">/jsps/order/item.jsp</result>
+			<result name="deleteOrder" type="redirectAction">order_myOrderList</result>
+			<result name="dealOrder" >/jsps/seller/seller.jsp</result>
+			<result name="getOrder" >/page/myorder.jsp</result>
+		</action>
+
+	</package>
+</struts>    
